@@ -1,0 +1,47 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="favGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fae5b5" />
+      <stop offset="30%" stop-color="#dfb76c" />
+      <stop offset="70%" stop-color="#c49746" />
+      <stop offset="100%" stop-color="#9e761b" />
+    </linearGradient>
+    <linearGradient id="favGoldLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c49746" />
+      <stop offset="45%" stop-color="#fae5b5" />
+      <stop offset="75%" stop-color="#dfb76c" />
+      <stop offset="100%" stop-color="#e0be63" />
+    </linearGradient>
+    <linearGradient id="favDarkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e2c47" />
+      <stop offset="50%" stop-color="#111a2d" />
+      <stop offset="100%" stop-color="#080e1a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Architectural Medallion Frame -->
+  <rect x="4" y="4" width="92" height="92" rx="22" fill="url(#favDarkBg)" stroke="url(#favGoldGrad)" stroke-width="2.5" />
+  <rect x="8.5" y="8.5" width="83" height="83" rx="17.5" fill="none" stroke="url(#favGoldLight)" stroke-width="0.8" stroke-opacity="0.5" />
+
+  <!-- Corner Accents -->
+  <circle cx="13.5" cy="13.5" r="1.5" fill="#dfb76c" />
+  <circle cx="86.5" cy="13.5" r="1.5" fill="#dfb76c" />
+  <circle cx="13.5" cy="86.5" r="1.5" fill="#dfb76c" />
+  <circle cx="86.5" cy="86.5" r="1.5" fill="#dfb76c" />
+
+  <!-- Architectural M Geometric Monogram -->
+  <g>
+    <!-- Left Pillar -->
+    <path d="M22 74 L22 30 L31 24 L31 74 Z" fill="url(#favGoldLight)" />
+    <!-- Right Pillar -->
+    <path d="M69 74 L69 24 L78 30 L78 74 Z" fill="url(#favGoldGrad)" />
+    <!-- Left Chevron Slant -->
+    <path d="M31 24 L50 56 L44 60 L22 30 Z" fill="url(#favGoldLight)" />
+    <!-- Right Chevron Slant -->
+    <path d="M69 24 L78 30 L56 60 L50 56 Z" fill="url(#favGoldGrad)" />
+    <!-- Keystone Diamond Apex -->
+    <polygon points="50,16 56.5,23.5 50,31 43.5,23.5" fill="#fae5b5" />
+    <!-- Foundation Line -->
+    <line x1="18" y1="78" x2="82" y2="78" stroke="url(#favGoldGrad)" stroke-width="2" stroke-linecap="round" />
+  </g>
+</svg>

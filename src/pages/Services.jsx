@@ -71,15 +71,24 @@ export default function Services() {
                   <div className="absolute top-0 left-4 right-4 h-[1px] bg-gradient-to-r from-transparent via-white to-transparent pointer-events-none z-20" />
 
                   <div>
-                    {/* Service Photo with High-Gloss Top Bevel */}
-                    <div className="relative h-60 w-full overflow-hidden bg-black/5">
+                    {/* Service Photo with High-Gloss Finish & Divider Line */}
+                    <div className="relative h-60 w-full overflow-hidden bg-black/5 border-b border-[#c49746]/35">
                       <img
                         src={service.image}
                         alt={service.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                       />
+                      {/* Top Specular Edge Glint */}
                       <div className="absolute top-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-transparent via-white/80 to-transparent z-10 pointer-events-none" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent pointer-events-none" />
+
+                      {/* Specular Diagonal Glass Sheen Sweep on Hover */}
+                      <span className="absolute inset-0 w-full h-full bg-gradient-to-tr from-transparent via-white/25 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none z-10" />
+
+                      {/* Crystal Clear Glossy Surface Glaze */}
+                      <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-black/10 pointer-events-none" />
+
+                      {/* Crisp Gold Divider Line After Image */}
+                      <div className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-transparent via-[#dfb76c] to-transparent shadow-[0_1px_3px_rgba(196,151,70,0.35)] z-10 pointer-events-none" />
 
                       {/* Architectural Assurance Badge */}
                       <div className="absolute top-3 left-3 z-10">
